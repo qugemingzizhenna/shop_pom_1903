@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qf.dao.GoodsTypeMapper">
+
+    <select id="queryAllType" resultType="com.qf.entity.GoodsType">
+        select gt.*,gt2.gtname as gtPname from goodstype gt left join
+        goodstype gt2 on gt.gtpid=gt2.id
+    </select>
+</mapper>

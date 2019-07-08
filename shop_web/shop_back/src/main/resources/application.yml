@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+dubbo:
+  application:
+    name: back_web
+  registry:
+    address: zookeeper://192.168.56.128:2181
+  consumer:
+    check: false
+upload:
+  path: D:/idea project/img/
